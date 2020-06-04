@@ -10,7 +10,7 @@
 </h1>
 
 <h1>
-    <img src="prints/homr.png">
+    <img src="prints/home.png">
 </h1>
 
 <h1>
