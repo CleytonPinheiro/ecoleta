@@ -1,0 +1,28 @@
+
+node 12.18.0
+
+npm -v 6.14.4
+
+git bash
+
+db : SQlite
+
+COMANDO npm
+
+criando arquivo server.js
+
+Gerando json da estrutura de pastas do projeto
+
+npm init -y
+
+Instalando express - Configurando servidor js
+
+$ npm install express
+
+- Rodando o package.json
+
+npm install
+
+//Atalho para iniciar o servidor, configurado no package.json
+
+npm start
