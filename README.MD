@@ -6,15 +6,15 @@
 ## Prints das telas desenvolvidas
 
 <h1>
-    <img src="prints/form.png">
+    <img src="public/prints/form.png">
 </h1>
 
 <h1>
-    <img src="prints/home.png">
+    <img src="public/prints/home.png">
 </h1>
 
 <h1>
-    <img src="prints/modal.png">
+    <img src="public/prints/modal.png">
 </h1>
 
 ## 🔖 Sobre
