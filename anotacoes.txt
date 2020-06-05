@@ -26,3 +26,11 @@ npm install
 //Atalho para iniciar o servidor, configurado no package.json
 
 npm start
+
+
+Parte 5
+
+npm install sqlite3
+
+//Gerando o arquivo .db
+node src/database/db.js

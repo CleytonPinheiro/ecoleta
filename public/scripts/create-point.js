@@ -70,6 +70,8 @@ function handleSelectedItem(event){
     itemLi.classList.toggle("selected")
 
     const itemId = itemLi.dataset.id
+
+    console.log('Item ID:', itemId)
     
 
     //Verificar se existem itens selecionados , se sim então pegá-los
