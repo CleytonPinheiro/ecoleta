@@ -18,7 +18,7 @@ nunjucks.configure("src/views", {
 
 //Configurando caminhos da app. page home. Req: Requisição, res: Resposta
 server.get("/", (req,res) => {
-    return res.render("index.html", {title: "Um título"})
+    return res.render("index.html")
 })
 
 server.get("/create-point", (req,res) => {
