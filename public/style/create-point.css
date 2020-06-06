@@ -36,7 +36,7 @@ form{
     background-color: white;
 
     margin:80px auto;
-    
+
     /*Preenchimento da caixa form*/
     padding: 64px;
 
@@ -129,8 +129,9 @@ form button{
 
     border:0;
 
-    margin-top: 40px;
-    transition: 400ms;
+    margin-top:40px;
+
+    transition: background-color 400ms;
 }
 
 form button:hover{
@@ -141,7 +142,7 @@ form button:hover{
 /*Trabalhando com tabela inferior da view*/
 
 .items-grid {
-    
+
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap:16px;

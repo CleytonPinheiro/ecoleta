@@ -31,13 +31,12 @@
                 </div>
                 <div class="field">
                     <label for="name">Imagem da entidade</label>
-                    <input type="url" name="image" placeholder:"http://"="placeholder:"http://"" required="required">
+                    <input
+                        type="url"
+                        name="image"
+                        placeholder="http://"
+                        required="required">
                 </div>
-            </div>
-
-            <div class="field">
-                <label for="name">Nome da entidade</label>
-                <input type="text" name="name" required="required">
             </div>
 
             <div class="field-group">
@@ -45,7 +44,6 @@
                     <label for="address">Endereço</label>
                     <input type="text" name="address" required="required">
                 </div>
-
                 <div class="field">
                     <label for="address2">Número/Complemento</label>
                     <input type="text" name="address2" required="required">
@@ -62,9 +60,9 @@
                     <input type="hidden" name="state">
                 </div>
                 <div class="field">
-                    <label for="state">Cidade</label>
+                    <label for="city">Cidade</label>
                     <select name="city" disabled="disabled" required="required">
-                        <option value="">Selecione a cidade</option>
+                        <option value="">Selecione a Cidade</option>
                     </select>
                 </div>
             </div>
@@ -73,7 +71,7 @@
         <fieldset>
             <legend>
                 <h2>Itens de coleta</h2>
-                <span>Seleciona um ou mais itens abaixo</span>
+                <span>Selecione um ou mais itens abaixo</span>
             </legend>
 
             <div class="items-grid">
@@ -111,15 +109,16 @@
         <button type="submit">Cadastrar ponto de coleta</button>
     </form>
 
-    {% block modal%}
-        {% if saved %}
-            {%include "partials/point-created.html"%}
 
-        {% endif %}
+{% endblock content%}
 
-    {%endblock modal%}}
 
-{% endblock content %}
+{% block modal %}
+    {% if saved %}
+        {%include "partials/point-created.html"%}
+    {% endif %}
+{% endblock modal %}
+
 
 {% block scripts %}
     <script src="/scripts/create-point.js"></script>
