@@ -1,6 +1,6 @@
 
 <h1 align="center">
-    <img src="/assets/logo.svg">
+    <img src="/public/assets/logo.svg">
 </h1>
 
 ## Prints das telas desenvolvidas
@@ -44,6 +44,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
 - [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 - [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Aprender/JavaScript)
+- [NUNJUCKS](https://mozilla.github.io/nunjucks/)
 
 ---
 
@@ -61,9 +62,12 @@ As aulas foram ministradas pelo **[Mayk Brito](https://github.com/maykbrito)** n
 
     # Entrar no diretório
     $ cd ecoleta
+    
+    #Subir o servidor local, digitando o comando:
+    $ npm start
 
     # Iniciar o projeto
-    $ abrir no navegador o arquivo index.html
+    $ abrir no navegador: localhost:3000
 ```
 
 ---
