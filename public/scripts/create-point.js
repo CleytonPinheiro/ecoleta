@@ -3,7 +3,7 @@ function populateUFs(){
     const ufSelect = document.querySelector("select[name=uf]")
     //*const stateInput = document.querySelector("input[name=state]")
 
-    fetch("https://servicodados.ibge.gov.br/api/v1/localidades/estados")
+    fetch("https://servicodados.ibge.gov.br/api/v1/localidades/estados?orderBy=nome")
         .then( res => res.json() )
         //*.then(()=>{return res.json})
         .then( states => {
@@ -27,7 +27,7 @@ function getCities(event) {
     const indexOfSelectedState = event.target.selectedIndex
     stateInput.value = event.target.options[indexOfSelectedState].text
 
-    const url = `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${ufValue}/municipios`
+    const url = `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${ufValue}/municipios?orderBy=nome`
 
 
     /* Limpando campo cidade na mudança de option estado */
