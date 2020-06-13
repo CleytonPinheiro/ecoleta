@@ -2,7 +2,7 @@
     background-color: #0E0A14ef;
 
     height: 100vh;
-    width: 200vh;
+    width: 230vh;
 
     position: fixed;
     top: 0;
@@ -20,7 +20,7 @@
 
 #modal .content {
     color: white;
-    width: 420px;
+    width: 350px;
 }
 
 #modal .header {
@@ -100,4 +100,28 @@
     color: white;
 
     margin-top: 32px;
+}
+
+/*Estilizando a implementação modal search-results*/
+
+#modal .field{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 10px;
+}
+
+#modal .field-group {
+    font-size: 25px;
+    margin-bottom: 12px;    
+
+    -webkit-appearance:none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+#modal .field-group select{
+    width: 70%;
+    font-size: 17px;
 }

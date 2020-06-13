@@ -9,6 +9,7 @@ function populateUFs(){
         .then( states => {
 
             for( const state of states){
+                /*console.log(state.id)*/
                 ufSelect.innerHTML += `<option value="${state.id}">${state.nome}</option>`
             }
             /*ufSelect.innerHTML += `<option value="${state.id}">${state.nome}</option>`*/
@@ -23,6 +24,7 @@ function getCities(event) {
 
 
     const ufValue = event.target.value
+    
 
     const indexOfSelectedState = event.target.selectedIndex
     stateInput.value = event.target.options[indexOfSelectedState].text
@@ -71,7 +73,7 @@ function handleSelectedItem(event){
 
     const itemId = itemLi.dataset.id
 
-    console.log('Item ID:', itemId)
+    /*console.log('Item ID:', itemId)*/
 
 
     //Verificar se existem itens selecionados , se sim então pegá-los

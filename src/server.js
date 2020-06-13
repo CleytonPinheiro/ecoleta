@@ -27,6 +27,7 @@ server.get("/", (req, res) => {
 })
 
 server.get("/create-point", (req, res) => {
+    /*console.log(res)*/
     return res.render("create-point.html")
 })
 
@@ -63,12 +64,12 @@ server.post("/savepoint", (req, res) => {
     //Usando chamada callback
     function afterInsertData(err) {
         if (err) {
-            console.log(err)
+            /*console.log(err)*/
             return res.send("Erro no cadastro")
         }
 
-        console.log("Cadastrado com sucesso")
-        console.log(this)
+        //*console.log("Cadastrado com sucesso")
+        //*console.log(this)
 
         return res.render("create-point.html", { saved: true })
     }
@@ -78,9 +79,10 @@ server.post("/savepoint", (req, res) => {
 
 
 server.get("/search", (req, res) => {
+    
 
-    const search = req.query.search
-
+    const search = req.body
+    console.log(search)
     if(search == "") {
         // pesquisa vazia
         return res.render("search-results.html", { total: 0})

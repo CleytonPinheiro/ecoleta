@@ -4,15 +4,31 @@
             <h1>Pontos de Coleta</h1>
             <a href="#">Fechar</a>
         </div>
-        <form action="/search">
-            <label for="search">Cidade</label>
-            <div class="search field">
-                <input type="text" name="search"
-                placeholder="Pesquise por cidade">
-                <button>
-                    <img src="/assets/search.svg" alt="Buscar">
-                </button>
+
+        <div class="field-group">
+            <div class="field">
+                <label for="state">Estado</label>
+                <select name="uf" required="required">
+                    <option value="">Selecione o Estado</option>
+                </select>
             </div>
-        </form>
+
+            <div class="field">
+                <form action="/search" mehod="POST">
+                    <label for="city">Cidade</label>
+                    <select name="city" disabled="disabled" required="required">
+                        <option value="">Selecione a Cidade</option>
+                        <input type="hidden" name="state">
+                    </select>
+                    <input type="submit" value="Submit">
+                </form>
+
+            </div>
+        </div>
     </div>
 </div>
+
+{% block scripts %}
+    <script src="/scripts/create-point.js"></script>
+    <script src="/scripts/redirectmodal.js"></script>
+{% endblock scripts %}
